@@ -1,0 +1,7 @@
+platform :ios, ‘8.0’ #手机的系统
+target ‘FSCartDemo’ do
+
+pod 'FMDB'        #数据库
+
+
+end

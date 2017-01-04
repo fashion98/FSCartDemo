@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>goodsId</key>
+		<string>101</string>
+		<key>goodsImg</key>
+		<string>东北虎天然饮用水.jpg</string>
+		<key>goodsName</key>
+		<string>东北虎天然饮用水</string>
+		<key>goodsPrice</key>
+		<string>20</string>
+		<key>goodsSeries</key>
+		<string>18.9L/桶</string>
+	</dict>
+	<dict>
+		<key>goodsId</key>
+		<string>102</string>
+		<key>goodsImg</key>
+		<string>娃哈哈桶装矿泉水.jpg</string>
+		<key>goodsName</key>
+		<string>娃哈哈桶装矿泉水</string>
+		<key>goodsPrice</key>
+		<string>15</string>
+		<key>goodsSeries</key>
+		<string>17.8L/桶</string>
+	</dict>
+	<dict>
+		<key>goodsId</key>
+		<string>103</string>
+		<key>goodsImg</key>
+		<string>雀巢桶装矿泉水.jpg</string>
+		<key>goodsName</key>
+		<string>雀巢桶装矿泉水</string>
+		<key>goodsPrice</key>
+		<string>22</string>
+		<key>goodsSeries</key>
+		<string>18.9L/桶</string>
+	</dict>
+	<dict>
+		<key>goodsId</key>
+		<string>104</string>
+		<key>goodsImg</key>
+		<string>燕京桶装矿泉水.jpg</string>
+		<key>goodsName</key>
+		<string>燕京桶装矿泉水</string>
+		<key>goodsPrice</key>
+		<string>18</string>
+		<key>goodsSeries</key>
+		<string>17.8L/桶</string>
+	</dict>
+	<dict>
+		<key>goodsId</key>
+		<string>105</string>
+		<key>goodsImg</key>
+		<string>屈臣氏桶装矿泉水.jpg</string>
+		<key>goodsName</key>
+		<string>屈臣氏桶装矿泉水</string>
+		<key>goodsPrice</key>
+		<string>22</string>
+		<key>goodsSeries</key>
+		<string>18.9L/桶</string>
+	</dict>
+</array>
+</plist>

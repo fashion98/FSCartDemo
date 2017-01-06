@@ -15,16 +15,16 @@
 
 @interface FSCartVC ()<UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) UIImageView *noGoodsImgView;
-@property (strong, nonatomic) UIButton *goHomeViewButton;
+@property (strong, nonatomic) UIImageView *noGoodsImgView;       // 当购物车没有商品的时候的图片
+@property (strong, nonatomic) UIButton *goHomeViewButton;        // 当购物车没有商品的时候跳到首页的按钮
 
-@property (strong, nonatomic) UITableView *shopcartTableView;
-@property (strong, nonatomic) NSMutableArray *shopcartGoodsArray;
-@property (strong, nonatomic) NSMutableArray *resultArray;
+@property (strong, nonatomic) UITableView *shopcartTableView;    // 购物车的tableView
+@property (strong, nonatomic) NSMutableArray *shopcartGoodsArray;// 购物车数据源数组
+@property (strong, nonatomic) NSMutableArray *resultArray;       // 选中商品的model数组
 
-@property (strong, nonatomic) FSSumView *sumView;
+@property (strong, nonatomic) FSSumView *sumView;                // 总计的view
 
-@property (assign, nonatomic) BOOL isSelectAll;
+@property (assign, nonatomic) BOOL isSelectAll;                  // 是否全选
 
 @end
 
@@ -63,7 +63,7 @@ static NSString *cellID = @"FSShopCartCell";
         [self initNoGoodsView];
     }
     
-    
+    // 每次界面将要显示的时候，将全选状态置为NO
     self.isSelectAll = NO;
     
     [self.shopcartTableView reloadData];
@@ -135,11 +135,11 @@ static NSString *cellID = @"FSShopCartCell";
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    cell.isSelected = self.isSelectAll;
+    cell.isSelected = self.isSelectAll;// 绘制cell的时候先将是否全选的状态赋给cell
     
     if ([self.resultArray containsObject:self.shopcartGoodsArray[indexPath.section]]) {
         
-        cell.isSelected = YES;
+        cell.isSelected = YES; // 如果结算数组中包含当前cell的model，就要将当前cell的选中状态置为YES
     }
     
     // cell中选中按钮的点击回调
@@ -255,7 +255,7 @@ static NSString *cellID = @"FSShopCartCell";
             [tableView deleteSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:(UITableViewRowAnimationFade)];
             
             
-            if (!self.shopcartGoodsArray.count) {
+            if (self.shopcartGoodsArray.count == 0) {
                 
                 [self.sumView removeFromSuperview];
                 [self initNoGoodsView];
@@ -409,7 +409,7 @@ static NSString *cellID = @"FSShopCartCell";
         }
         else
         {
-            a = model.goodsNum * [model.goodsPrice doubleValue] * 0.8;
+            a = model.goodsNum * [model.goodsPrice doubleValue] * 0.8;// 折扣价，为了简单，我就打了8折
         }
         
         totalPrice = totalPrice + a;

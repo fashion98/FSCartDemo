@@ -54,7 +54,7 @@
                             <constraint firstAttribute="width" priority="500" constant="46" id="uq1-Xf-VhA"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <state key="normal" title="立即购买"/>
+                        <state key="normal" title="加入购物车"/>
                         <connections>
                             <action selector="buyAction:" destination="t0x-On-WdC" eventType="touchUpInside" id="T5U-F8-aIe"/>
                         </connections>
